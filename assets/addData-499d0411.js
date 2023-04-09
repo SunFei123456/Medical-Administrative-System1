@@ -1,0 +1,1 @@
+function o(t,s,n){const e=new XMLHttpRequest;e.open("POST",t),e.setRequestHeader("Content-Type","application/json"),e.onload=function(){e.status===200?n(e.responseText):console.log("Request failed.  Returned status of "+e.status)},e.send(JSON.stringify(s))}export{o as s};
